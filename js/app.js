@@ -19,6 +19,15 @@ var apples = prompt(name + ' do you like apples?').toLowerCase();
     }
 console.log(apples);
 
+var travel = prompt(name + ' would you believe me if I told you that I\'ve been to Mongolia?').toLowerCase();
+    if (travel === 'yes') {
+        alert('Well you shoul\'nt!');
+    }
+    else if (travel === 'no'){
+        alert('Affermative! I have never been to the land of Ghengis Kahn!')
+    }
+console.log(travel);
+
 var satisfy = prompt(' Have you enjoyed these questions ' + name +'?').toUpperCase();
     if (satisfy === 'YES'){
         alert('Im glad you like them. There are more on the way.')
@@ -28,14 +37,16 @@ var satisfy = prompt(' Have you enjoyed these questions ' + name +'?').toUpperCa
     }
 console.log(satisfy);
 
-alert('Ok ' + name + ' I\'ve got 3 pets at home, do you think you can guess one of their name\'s?');
 
-var petNameGuess = prompt('*HINT*: Two are named for foods, and the other is derived of \'father\'.').toUpperCase();
-    if (petNameGuess === 'VADER'|| 'MEATLOAF' || 'NOODLE'){
-        alert('Congrats! You got it!')
-    }
-    else (petNameGuess !== 'VADER' || 'MEATLOAF' || 'NOODLE');
-        alert('Sorry, that is wrong')
+
+// alert('Ok ' + name + ' I\'ve got 3 pets at home, do you think you can guess one of their name\'s?');
+
+// // var petNameGuess = prompt('*HINT*: Two are named for foods, and the other is derived of \'father\'.').toUpperCase();
+// //     if ((petNameGuess === ('VADER'|| 'MEATLOAF' || 'NOODLE')){
+// //         alert('Congrats! You got it!')
+// //     }
+// //     else if ((petNameGuess !== ('VADER') ||('MEATLOAF') || ('NOODLE'));
+// //         alert('Sorry, that is wrong')
     
-console.log(petNameGuess);
+// // console.log(petNameGuess);
 
