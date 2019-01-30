@@ -1,0 +1,26 @@
+body, ul, ol {
+	background-color: #20d09b;
+  border: 10px solid black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  color: rgb(128, 20, 179);
+  border: 5px solid white;
+}
+
+p{
+  font-family: Helvetica;
+  color: rgb(175, 3, 40);
+  border: 20px outset rgb(106, 106, 228);
+  padding: 20px;
+  text-emphasis: bold;
+  margin-bottom: 10px;
+}
+
+ul, ol { 
+  font-family: Impact;
+  color: rgb(47, 0, 158);
+  line-height: 150%;
+}

@@ -27,3 +27,15 @@ var satisfy = prompt(' Have you enjoyed these questions' + name +'?').toUpperCas
         alert('Well ' + name + ' I\'ll do my best in the future to live up to your high standards.')
     }
 console.log(satisfy);
+
+alert('Ok ' + name + ' I\'ve got 3 pets at home, do you think you can guess one of their name\'s?');
+
+var petNameGuess = prompt('*HINT*: Two are named for foods, and the other is derived of \'father\'.').toUpperCase();
+    if (petNameGuess === 'VADER'|| 'MEATLOAF' || 'NOODLE'){
+        alert('Congrats! You got it!')
+    }
+    else (petNameGuess !=== 'VADER' || 'MEATLOAF' || 'NOODLE'){
+        alert('Sorry, that is wrong')
+    }
+console.log(petNameGuess);
+
