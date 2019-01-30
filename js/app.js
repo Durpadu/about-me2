@@ -34,7 +34,7 @@ var petNameGuess = prompt('*HINT*: Two are named for foods, and the other is der
     if (petNameGuess === 'VADER'|| 'MEATLOAF' || 'NOODLE'){
         alert('Congrats! You got it!')
     }
-    else (petNameGuess !=== 'VADER' || 'MEATLOAF' || 'NOODLE'){
+    else (petNameGuess !== 'VADER' || 'MEATLOAF' || 'NOODLE'){
         alert('Sorry, that is wrong')
     }
 console.log(petNameGuess);
