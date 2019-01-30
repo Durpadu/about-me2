@@ -19,7 +19,7 @@ var apples = prompt(name + ' do you like apples?').toLowerCase();
     }
 console.log(apples);
 
-var satisfy = prompt(' Have you enjoyed these questions' + name +'?').toUpperCase();
+var satisfy = prompt(' Have you enjoyed these questions ' + name +'?').toUpperCase();
     if (satisfy === 'YES'){
         alert('Im glad you like them. There are more on the way.')
     }
@@ -34,8 +34,8 @@ var petNameGuess = prompt('*HINT*: Two are named for foods, and the other is der
     if (petNameGuess === 'VADER'|| 'MEATLOAF' || 'NOODLE'){
         alert('Congrats! You got it!')
     }
-    else (petNameGuess !== 'VADER' || 'MEATLOAF' || 'NOODLE'){
+    else (petNameGuess !== 'VADER' || 'MEATLOAF' || 'NOODLE');
         alert('Sorry, that is wrong')
-    }
+    
 console.log(petNameGuess);
 
