@@ -1,6 +1,8 @@
 'use strict'
 
-var name = prompt('Hello user! What should I call you going forward');
+var correctCounter = 0;
+
+var name = prompt('Hello user! What should I call you going forward?');
 console.log(name);
 
 var yesNo = prompt('I\'m going to ask you some yes/no questions ' + name + '; are you ready? Please use full words.').toUpperCase();
@@ -11,11 +13,12 @@ var yesNo = prompt('I\'m going to ask you some yes/no questions ' + name + '; ar
     }
 console.log(yesNo);
 
-var apples = prompt(name + ' do you like apples?').toLowerCase();
+var apples = prompt(name + ' do you think I like apples?').toLowerCase();
     if (apples === 'yes') {
         alert('I love apples. They\'re the perfect fruit');
+        correctCounter++
     } else if (apples === 'no') {
-        alert('I\'m not saying that you\'re wrong for that opinion, but you are.')
+        alert('I\'m not saying that you\'re wrong, but you are.')
     }
 console.log(apples);
 
@@ -24,11 +27,66 @@ var travel = prompt(name + ' would you believe me if I told you that I\'ve been 
         alert('Well you shoul\'nt!');
     }
     else if (travel === 'no'){
-        alert('Affermative! I have never been to the land of Ghengis Kahn!')
+        alert('Affermative! I have never been to the land of Ghengis Kahn!');
+        correctCounter++
     }
 console.log(travel);
 
-var satisfy = prompt(' Have you enjoyed these questions ' + name +'?').toUpperCase();
+//Question 6
+var guessRemains = 4;
+  var myAge = 28;
+  while(guessRemains > 0) {
+    var guessMyAge = prompt( name + ' can you guess my age?');
+    guessMyAge = parseInt(guessMyAge);
+
+    if(guessMyAge === myAge) {
+      alert('You are correct! I am still, thankfully, in my 20\'s');
+      // eslint-disable-next-line semi
+      correctCounter++
+      break;
+    } else if(guessMyAge > myAge) {
+      guessRemains--;
+      alert('I\'m not that old!');
+    } else if(guessMyAge < myAge) {
+      guessRemains--;
+      alert('Thanks for thinking I look so young!');
+    }
+    if( guessRemains===0) {
+      alert('Sorry, you\'re out of attempts. The right answer is 28.');
+    }
+  }
+  console.log('user has guessed ' + guessMyAge);
+  console.log(guessRemains);
+
+//Question 7
+
+alert('Its time to guess the names of my pets! You\'ll have 6 attempts!');
+
+  var petNames = ['meatloaf', 'noodle', 'vader'];
+  var counterGuess = 0;
+  do{
+    var petNameGuess = prompt('I have 3 pets. Can you guess one of their names? **HINT** Two are named after food.');
+    petNameGuess= petNameGuess.toLowerCase();
+
+    if (petNames.includes(petNameGuess)) {
+      alert('That is correct! Congrats!');
+      console.log('pets' + correctCounter);
+      correctCounter++;
+      break;
+    }
+
+    if( !petNames.includes(petNameGuess)) {
+      alert('Sorry, try again');
+      counterGuess++;
+      console.log(counterGuess);
+    }
+    if (counterGuess === 6) {
+      alert('Looks like you\'re all out of tries...');
+    }
+  }while(counterGuess < 6);
+  alert('My dog is named Vader, and my cats are named Meatloaf and Noodle! :) ');
+
+  var satisfy = prompt(' Have you enjoyed these questions ' + name +'?').toUpperCase();
     if (satisfy === 'YES'){
         alert('Im glad you like them. There are more on the way.')
     }
@@ -37,16 +95,4 @@ var satisfy = prompt(' Have you enjoyed these questions ' + name +'?').toUpperCa
     }
 console.log(satisfy);
 
-
-
-// alert('Ok ' + name + ' I\'ve got 3 pets at home, do you think you can guess one of their name\'s?');
-
-// // var petNameGuess = prompt('*HINT*: Two are named for foods, and the other is derived of \'father\'.').toUpperCase();
-// //     if ((petNameGuess === ('VADER'|| 'MEATLOAF' || 'NOODLE')){
-// //         alert('Congrats! You got it!')
-// //     }
-// //     else if ((petNameGuess !== ('VADER') ||('MEATLOAF') || ('NOODLE'));
-// //         alert('Sorry, that is wrong')
-    
-// // console.log(petNameGuess);
-
+  alert( name + ' you got ' + correctCounter + ' out of 4.');
