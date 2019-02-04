@@ -1,18 +1,37 @@
+body {
+  background-image: url("../images/LKgif.gif");
+  background-size: cover;
+  background-position: center;
+}
+
 body, ul, ol {
-	background-color: #20d09b;
-  border: 10px solid black;
+
+  border: 15px solid rgb(0, 0, 0);
   text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
 }
 
 h1 {
   font-size: 48px;
-  color: rgb(128, 20, 179);
+  color: rgb(238, 255, 6);
   border: 5px solid white;
+}
+
+p#bio {
+  height: 500px;
+  width: fit-content;
+  font-family: Helvetica;
+  color: white;
+  font-size: 30px;
 }
 
 p{
   font-family: Helvetica;
-  color: rgb(175, 3, 40);
+  color: rgb(255, 255, 255);
   border: 20px outset rgb(106, 106, 228);
   padding: 20px;
   text-emphasis: bold;
@@ -21,6 +40,17 @@ p{
 
 ul, ol { 
   font-family: Impact;
-  color: rgb(47, 0, 158);
+  color: rgb(247, 247, 247);
   line-height: 150%;
+}
+
+ul#nav li { 
+  display: inline;
+  float: center;
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+
 }
